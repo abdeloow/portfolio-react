@@ -22,6 +22,8 @@ function Navbar() {
                         </li>
                         <li>
                             <a className='menu-item' href="#work-experience">Experience</a>
+                        </li><li>
+                            <a className='menu-item' href="#project-showcase">Projet Showcase</a>
                         </li>
                         <li>
                             <a className='menu-item' href="#contact-me">Contact Me</a>
