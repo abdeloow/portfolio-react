@@ -12,19 +12,19 @@ function Navbar() {
             <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
             <nav className='nav-wrapper'>
                 <div className='nav-content'>
-                    <img className='logo' src='./assets/images/logo_DPa.png' />
+                    <img className='logo' src='./assets/images/logo_DPa.png' alt="Logo" />
                     <ul>
                         <li>
-                            <a className='menu-item'>Home</a>
+                            <a className='menu-item' href="#hero">Home</a>
                         </li>
                         <li>
-                            <a className='menu-item'>Skills</a>
+                            <a className='menu-item' href="#skills">Skills</a>
                         </li>
                         <li>
-                            <a className='menu-item'>Experience</a>
+                            <a className='menu-item' href="#work-experience">Experience</a>
                         </li>
                         <li>
-                            <a className='menu-item'>Contact Me</a>
+                            <a className='menu-item' href="#contact-me">Contact Me</a>
                         </li>
                         <button className='contact-btn' onClick={() => { }}>
                             Hire Me
