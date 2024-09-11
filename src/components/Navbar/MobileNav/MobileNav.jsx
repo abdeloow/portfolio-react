@@ -1,6 +1,6 @@
 import './MobileNav.css'
 
-function MobileNav({isOpen, toggleMenu}) {
+function MobileNav({ isOpen, toggleMenu, handleDownload }) {
     return (
         <>
             <div className={`mobile-menu ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
@@ -8,25 +8,27 @@ function MobileNav({isOpen, toggleMenu}) {
                     <img className='logo' src='./assets/images/logo.svg' alt='' />
                     <ul>
                         <li>
-                            <a className='menu-item'>Home</a>
+                            <a className='menu-item' href="#hero" onClick={toggleMenu}>Home</a>
                         </li>
                         <li>
-                            <a className='menu-item'>Skills</a>
+                            <a className='menu-item' href="#skills" onClick={toggleMenu}>Skills</a>
                         </li>
                         <li>
-                            <a className='menu-item'>Experience</a>
+                            <a className='menu-item' href="#work-experience" onClick={toggleMenu}>Experience</a>
                         </li>
                         <li>
-                            <a className='menu-item'>Contact</a>
+                            <a className='menu-item' href="#contact-me" onClick={toggleMenu}>Contact</a>
                         </li>
-                        <button className='contact-btn' onClick={() => { }}>
-                            Hire Me
-                        </button>
+                        <li>
+                            <button className='contact-btn' onClick={handleDownload}>
+                                Hire Me
+                            </button>
+                        </li>
                     </ul>
                 </div>
-            </div >
+            </div>
         </>
-    )
+    );
 }
 
 export default MobileNav;

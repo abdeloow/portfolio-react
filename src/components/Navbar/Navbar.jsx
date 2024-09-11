@@ -7,12 +7,17 @@ function Navbar() {
     const toggleMenu = () => {
         setOpenMenu(!openMenu);
     }
+
+    const handleDownload = () => {
+        window.open('https://1drv.ms/b/s!AlAnKjDA-wIE_E5yknW4GHUBDbeR?e=8YiGpg', '_blank');
+    };
+
     return (
         <>
-            <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
+            <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} handleDownload={handleDownload} />
             <nav className='nav-wrapper'>
                 <div className='nav-content'>
-                    <img className='logo' src='./assets/images/logo_DPa.png' alt="Logo" />
+                    <img className='logo' src='.assets/images/logo_DPa.pngpng' alt="Logo" />
                     <ul>
                         <li>
                             <a className='menu-item' href="#hero">Home</a>
@@ -22,14 +27,15 @@ function Navbar() {
                         </li>
                         <li>
                             <a className='menu-item' href="#work-experience">Experience</a>
-                        </li><li>
-                            <a className='menu-item' href="#project-showcase">Projet Showcase</a>
+                        </li>
+                        <li>
+                            <a className='menu-item' href="#project-showcase">Project Showcase</a>
                         </li>
                         <li>
                             <a className='menu-item' href="#contact-me">Contact Me</a>
                         </li>
-                        <button className='contact-btn' onClick={() => { }}>
-                            Hire Me
+                        <button className='contact-btn' onClick={handleDownload}>
+                            Download Resume
                         </button>
                     </ul>
                     <button className='menu-btn' onClick={toggleMenu}>
@@ -41,7 +47,6 @@ function Navbar() {
                 </div>
             </nav>
         </>
-    )
+    );
 }
-
 export default Navbar;
