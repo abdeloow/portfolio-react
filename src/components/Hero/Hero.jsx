@@ -1,4 +1,11 @@
 import './Hero.css'
+import csharp from '../../assets/images/c-sharp.png';
+import profile from '../../assets/images/p2.png';
+import typescript from '../../assets/images/typescript.png';
+import css3 from '../../assets/images/css-3.png';
+import js from '../../assets/images/js.png';
+import htmllang from '../../assets/images/html.png';
+import sqlServer from '../../assets/images/sql-server.png';
 
 function Hero() {
     return (
@@ -14,25 +21,25 @@ function Hero() {
                 <div className='hero-img'>
                     <div>
                         <div className='tech-icon'>
-                            <img src='./assets/images/c-sharp.png' alt='' />
+                            <img src={csharp} alt='' />
                         </div>
-                        <img src='./assets/images/p2.png' alt='' />
+                        <img src={profile} alt='' />
                     </div>
                     <div>
                         <div className='tech-icon'>
-                            <img src='./assets/images/typescript.png' alt='' />
+                            <img src={typescript} alt='' />
                         </div>
                         <div className='tech-icon'>
-                            <img src='./assets/images/css-3.png' alt='' />
+                            <img src={css3} alt='' />
                         </div>
                         <div className='tech-icon'>
-                            <img src='./assets/images/js.png' alt='' />
+                            <img src={js} alt='' />
                         </div>
                         <div className='tech-icon'>
-                            <img src='./assets/images/html.png' alt='' />
+                            <img src={htmllang} alt='' />
                         </div>
                         <div className='tech-icon'>
-                            <img src='./assets/images/sql-server.png' alt='' />
+                            <img src={sqlServer} alt='' />
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,12 @@
+import frontendIcon from '../assets/images/frontend.png';
+import backendIcon from '../assets/images/backend.png';
+import toolsIcon from '../assets/images/tools.png';
+import designIcon from '../assets/images/design.png';
 
 export const SKILLS = [
     {
         title: 'Frontend',
-        icon: './assets/images/frontend.png',
+        icon: frontendIcon,
         parts: [
             {
                 label: 'Languages',
@@ -28,7 +32,7 @@ export const SKILLS = [
     },
     {
         title: 'Backend',
-        icon: './assets/images/backend.png',
+        icon: backendIcon,
         parts: [
             {
                 label: 'Languages',
@@ -54,7 +58,7 @@ export const SKILLS = [
     },
     {
         title: 'Tools',
-        icon: './assets/images/tools.png',
+        icon: toolsIcon,
         parts: [
             {
                 label: 'Web',
@@ -88,7 +92,7 @@ export const SKILLS = [
     },
     {
         title: 'Methodologies',
-        icon: './assets/images/design.png',
+        icon: designIcon,
         parts: [
             {
                 label: 'Software Development Process',
@@ -119,18 +123,16 @@ export const SKILLS = [
     }
 ];
 
-
 export const WORK_EXPERIENCE = [
     {
         title: 'API Developer at ELIOTRON',
         date: '04/2024 - Present',
         responsabilities: [
-            'Rebuilt a component of a web application that integrates with APIs for SaaS services.',
-            'Designed and developed RESTful APIs using ASP.NET Core 7.0 and Node.js 16.0, focusing on scalability, performance, and modifying transformation middleware for enhanced data processing.',
-            'Implemented API security with OAuth 2.0 and JWT for secure data access.',
-            'Performed unit testing and debugging with SonarAnalyzer and Postman to ensure the Back testing engine and API integrations were reliable, following TDD and BDD practices.',
-            'Developed GraphQL APIs using Apollo Server 3.0, optimizing schema design for efficient data retrieval.',
-            'Collaborated with frontend teams to integrate APIs, using Postman 9.0 for testing.',
+            'Built a Web API using ASP.NET Core 7.0, integrating OpenAI for dynamic quiz questions.',
+            'Implemented JWT Authentication for secure API access and role-based control.',
+            'Utilized layered architecture with Repository, Unit of Work, and CQRS patterns for scalability.',
+            'Managed data with Entity Framework Core and SQL Server, ensuring error handling and validation.',
+            'Integrated Swagger for API documentation and used Agile methodologies with Git and MS-Teams for project management.',
         ]
     },
     {
@@ -147,14 +149,14 @@ export const WORK_EXPERIENCE = [
         ]
     },
     {
-        title: 'QA Automation Engineer at MONARKIT',
-        date: '06/2022 - 03/2023',
+        title: 'Software Engineer At WAME Production',
+        date: '06/2022 - 04/2023',
         responsabilities: [
-            'Developed and executed manual and automated tests using Selenium, xUnit, and Postman.',
-            'Mocked interfaces using Moq for isolating dependencies during testing.',
-            'Collaborated with developers and stakeholders to report and track defects, improving overall software quality.',
-            'Tested the staging application and its features using Selenium for automated UI testing.',
-            'Recorded and replayed test scenarios with Selenium IDE for rapid test case creation.',
+            'Developed a WPF-based desktop application for real-time monitoring of running processes using MVVM architecture.',
+            'Implemented features for tracking processes, network traffic, and remote IP connections with detailed process information.',
+            'Created command classes for user interactions, including process navigation and refreshing active TCP processes',
+            'Designed ViewModel classes to manage presentation logic and facilitate navigation within the application.',
+            'Integrated NetstatOutputHelper to gather and process network-related data for remote IP traffic analysis.',
             'Conducted static code analysis using SonarQube and contributed to process improvements in testing methodologies.'
         ]
     }
@@ -162,36 +164,39 @@ export const WORK_EXPERIENCE = [
 
 export const PROJECTS = [
     {
-        title: 'Project 1',
-        domain: 'Web Dev - SaaS',
+        title: 'Cross-Exchange Trading Aggregator',
+        domain: 'Web Api',
+        customer: 'Freelance',
+        duration: '120 days',
+        tasks: [
+            'Developed a C# demo for a Cross-Exchange Trading Aggregator, showcasing triangular arbitrage detection using live market data from exchanges like Binance and Poloniex.',
+            'Implemented backend architecture with service orchestration, exchange interactions, and graph-based algorithms for efficient trade cycle identification.',
+            'Utilized design patterns such as Factory, Repository, and Strategy, and integrated RESTful APIs for data retrieval, while ensuring separation of concerns in the application structure.'
+        ],
+        demoLink: 'https://github.com/abdeloow/Triangular-Arbitrage'
+    },
+    {
+        title: '"Next-Gen ASP.NET Core WebAPI Starter Kit',
+        domain: 'Web App',
         customer: 'Fiverr',
         duration: '180 days',
         tasks: [
-            'Lorem ipsum with C#',
-            'Loreming ASP.NET and React'
+            'Developed an ASP.NET Core 5 WebAPI template featuring default roles and credentials, JWT authentication, and health check capabilities for service status monitoring.',
+            'Implemented key features including N-Tier architecture, role-based authorization, Entity Framework Core, Redis caching, and comprehensive user management functionalities.',
+            'Utilized modern technologies such as GraphQL, MSSQL, MongoDB, Swagger, and Serilog to create a clean architecture that streamlines the setup of new WebAPI projects.'
         ],
-        demoLink: 'https://example.com/demo1'
+        demoLink: 'https://github.com/abdeloow/webapi-asp-react'
     },
     {
-        title: 'Project 2',
-        domain: 'Mobile App Development',
-        customer: 'Upwork',
-        duration: '120 days',
-        tasks: [
-            'Developed a mobile app using React Native',
-            'Integrated Firebase for backend services'
-        ],
-        demoLink: 'https://example.com/demo2'
-    },
-    {
-        title: 'Project 3',
-        domain: 'E-commerce Platform',
+        title: 'Process Dissection',
+        domain: 'Desktop Application',
         customer: 'Freelancer',
-        duration: '90 days',
+        duration: '180 days',
         tasks: [
-            'Built a full-stack application with MERN',
-            'Implemented payment gateway integration'
+            'Developed a WPF desktop application for real-time monitoring of processes using MVVM architecture, implementing features for tracking processes, network traffic, and remote IP connections.',
+            'Created command classes for user interactions and designed ViewModel classes to manage presentation logic and facilitate navigation.',
+            'Integrated NetstatOutputHelper for network data analysis and conducted static code analysis with SonarQube to improve testing methodologies.'
         ],
-        demoLink: 'https://example.com/demo3'
+        demoLink: 'https://github.com/abdeloow/ProcessDissect'
     }
 ];

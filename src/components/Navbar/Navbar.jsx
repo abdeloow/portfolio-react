@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css'
 import MobileNav from './MobileNav/MobileNav';
+import logo from '../../assets/images/logo_DPa.png';
 
 function Navbar() {
     const [openMenu, setOpenMenu] = useState(false);
@@ -17,7 +18,7 @@ function Navbar() {
             <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} handleDownload={handleDownload} />
             <nav className='nav-wrapper'>
                 <div className='nav-content'>
-                    <img className='logo' src='.assets/images/logo_DPa.pngpng' alt="Logo" />
+                    <img className='logo' src={logo} alt="Logo" />
                     <ul>
                         <li>
                             <a className='menu-item' href="#hero">Home</a>
