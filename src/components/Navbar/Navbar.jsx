@@ -10,7 +10,7 @@ function Navbar() {
     }
 
     const handleDownload = () => {
-        window.open('https://1drv.ms/b/s!AlAnKjDA-wIE_E5yknW4GHUBDbeR?e=8YiGpg', '_blank');
+        window.open('https://1drv.ms/b/s!AlAnKjDA-wIE_G4_NBmOGzwzOhN8?e=XHX6Mz', '_blank');
     };
 
     return (

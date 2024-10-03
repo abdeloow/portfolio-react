@@ -21,7 +21,7 @@ function MobileNav({ isOpen, toggleMenu, handleDownload }) {
                         </li>
                         <li>
                             <button className='contact-btn' onClick={handleDownload}>
-                                Hire Me
+                                View Resume
                             </button>
                         </li>
                     </ul>
